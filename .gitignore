@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Previews, backups, working files
+preview-*.png
+backup*/
+designs/
+*.zip
+*.bak
+*.log
+*.tmp
+node_modules/
+.vscode/
+.idea/
