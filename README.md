@@ -96,7 +96,7 @@ The `.htaccess` forces HTTPS, so the certificate must exist before you upload it
 
 ## TODO before / after launch
 
-- [ ] **Replace `hello@bigsalesfunnel.com`** once the real email exists. Search `index.html` for `hello@bigsalesfunnel.com` (it appears in the contact section and footer, with a TODO comment). Create the mailbox in cPanel > **Email Accounts**.
+- [x] **Replace `funnelbigsales@gmail.com`** once the real email exists. Search `index.html` for `funnelbigsales@gmail.com` (it appears in the contact section and footer, with a TODO comment). Create the mailbox in cPanel > **Email Accounts**.
 - [ ] **plaqueforlife.com screenshot:** the case-study image in `index.html` is a placeholder (`[PLACEHOLDER: plaqueforlife.com screenshot, add after client approval]`). Add a screenshot only after the client approves, e.g. save it as `assets/img/plaqueforlife.jpg` and replace the placeholder `<div class="shot" ...>` with an `<img>`.
 - [ ] Add the real postal address to email footers if you start cold-emailing US businesses (CAN-SPAM). A PO box or virtual mailbox is fine.
 - [ ] Optional: add Google Analytics or Search Console verification tags.
