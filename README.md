@@ -20,7 +20,10 @@ Plain HTML + CSS + a few lines of inline JavaScript. No build step, no database,
 │   │   ├── icon-bloom-192.png                 192x192 manifest icon
 │   │   └── icon-bloom-512.png                 512x512 manifest and JSON-LD logo
 │   ├── css/style.css       All styles
-│   └── img/logo-mark.svg   Earlier mark, no longer used in the header
+│   ├── img/logo-mark.svg   Earlier mark, no longer used in the header
+│   └── work/               Case-study screenshots
+│       ├── plaqueforlife-home.webp   Homepage screenshot
+│       └── plaqueforlife-home.jpg    JPEG fallback
 ├── favicon.svg             Browser tab icon
 ├── favicon.ico             Fallback icon
 ├── favicon-32.png          32x32 PNG icon
@@ -86,7 +89,7 @@ Troubleshooting: the deploy button only works if the repo has a clean working tr
 4. Delete the default `index.html` / `cgi-bin` placeholder files if cPanel created any (leave `.well-known` alone, AutoSSL uses it).
 5. Click **Upload**, choose the zip, wait for 100%, then go back.
 6. Right-click the zip in `public_html` > **Extract**. Extract into `/public_html`.
-7. Check that `index.html`, `404.html`, `assets/` (including `assets/brand/`), `site.webmanifest` and `.htaccess` are directly inside `public_html` (not inside a sub-folder). Then delete the zip. Also delete `.cpanel.yml` if present (not needed for this method).
+7. Check that `index.html`, `404.html`, `assets/` (including `assets/brand/` and `assets/work/`), `site.webmanifest` and `.htaccess` are directly inside `public_html` (not inside a sub-folder). Then delete the zip. Also delete `.cpanel.yml` if present (not needed for this method).
 8. Visit https://bigsalesfunnel.com.
 
 ## C. Turn on SSL (AutoSSL) first
@@ -106,6 +109,5 @@ The `.htaccess` forces HTTPS, so the certificate must exist before you upload it
 ## TODO before / after launch
 
 - [x] **Replace `funnelbigsales@gmail.com`** once the real email exists. Search `index.html` for `funnelbigsales@gmail.com` (it appears in the contact section and footer, with a TODO comment). Create the mailbox in cPanel > **Email Accounts**.
-- [ ] **plaqueforlife.com screenshot:** the case-study image in `index.html` is a placeholder (`[PLACEHOLDER: plaqueforlife.com screenshot, add after client approval]`). Add a screenshot only after the client approves, e.g. save it as `assets/img/plaqueforlife.jpg` and replace the placeholder `<div class="shot" ...>` with an `<img>`.
 - [ ] Add the real postal address to email footers if you start cold-emailing US businesses (CAN-SPAM). A PO box or virtual mailbox is fine.
 - [ ] Optional: add Google Analytics or Search Console verification tags.
