@@ -3,11 +3,12 @@
 # BEFORE USE: replace USERNAME below with your cPanel username
 # (shown top-right in cPanel, or run `pwd` in cPanel Terminal: /home/USERNAME).
 # Use /home/USERNAME/public_html/ for the main domain bigsalesfunnel.com.
+# `cp -R assets` deploys assets/brand/ (Bloom logo, PNG fallbacks, icon-bloom).
 deployment:
   tasks:
     - export DEPLOYPATH=/home/USERNAME/public_html/
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp index.html 404.html robots.txt sitemap.xml $DEPLOYPATH
-    - /bin/cp favicon.svg favicon.ico favicon-32.png apple-touch-icon.png og-image.png $DEPLOYPATH
+    - /bin/cp index.html 404.html robots.txt sitemap.xml site.webmanifest $DEPLOYPATH
+    - /bin/cp favicon.svg favicon.ico favicon-32.png apple-touch-icon-180.png og-image.png $DEPLOYPATH
     - /bin/cp .htaccess $DEPLOYPATH

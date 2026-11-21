@@ -1,0 +1,20 @@
+{
+  "name": "Big Sales Funnel",
+  "short_name": "Big Sales Funnel",
+  "icons": [
+    {
+      "src": "assets/brand/icon-bloom-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/brand/icon-bloom-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#100C24",
+  "background_color": "#100C24",
+  "display": "standalone",
+  "start_url": "."
+}
