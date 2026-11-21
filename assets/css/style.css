@@ -204,7 +204,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .note span{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:#fff;font-size:.75rem}
 .n1{right:-30px;top:110px}.n2{left:8%;bottom:-12px}.n3{left:31%;bottom:-12px}
 .case{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:clamp(70px,8vw,110px);padding:clamp(24px,4vw,44px);border-radius:28px;background:rgba(255,255,255,.04);border:1px solid var(--line-d)}
-.shot{aspect-ratio:4/3;border-radius:18px;display:grid;place-items:center;text-align:center;padding:24px;font-size:.9rem;color:var(--on-dark-2);background:repeating-linear-gradient(135deg,rgba(255,255,255,.03) 0 12px,rgba(255,255,255,.06) 12px 24px);border:1.5px dashed rgba(255,255,255,.22)}
+.case .sc-browser picture,.case .sc-browser img{display:block;width:100%;height:auto}
 .case h3{font:600 clamp(1.5rem,2.6vw,2rem)/1.15 var(--serif);letter-spacing:-.02em}
 .case-txt p{color:var(--on-dark-2)}
 .apply{padding:16px 18px;border-left:3px solid var(--orange);background:rgba(139,108,255,.1);border-radius:0 12px 12px 0}
